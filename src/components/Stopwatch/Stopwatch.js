@@ -65,9 +65,6 @@ class Stopwatch extends Component {
     } else {
       laps = time - timeList[timeList.length - 1];
     }
-    console.log("Stopwatch -> addLapTime -> laps", laps)
-    console.log("Stopwatch -> addLapTime -> time", time)
-    console.log("Stopwatch -> addLapTime -> timeList", timeList)
 
     this.setState({
       timeList : [ ...timeList, time ],
